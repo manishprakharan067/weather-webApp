@@ -1,29 +1,31 @@
 <html>
-  <head>
-    <title>Weather app</title>
-    <link rel="icon" href="/img/pic.jpg" />
-    <link rel="stylesheet" href="/css/styles.css" />
-    <!-- <link rel="stylesheet" href="/css/styles.css" /> -->
-  </head>
-  <body>
-    <div class="main-content">
-      {{> header}}
-      <p>Welcome to the Weather App</p>
-      {{!-- <h1>{{title}}</h1> --}}
-      {{!-- <p>Created By:: {{name}}</p> --}}
 
-      <form id="weather-form">
-        <input type="text" id="location" placeholder="Enter location" required />
-        <button type="submit">Get Weather</button>
-      </form>
-      <div id="weather-result">
-        <p id="weather-message"></p>
-        <p id="weather-details"></p>
-        <p id="weather-error"></p>  
+<head>
+  <title>Weather app</title>
+  <link rel="icon" href="/img/pic.jpg" />
+  <link rel="stylesheet" href="/css/styles.css" />
+  <!-- <link rel="stylesheet" href="/css/styles.css" /> -->
+</head>
+
+<body>
+  <div class="main-content">
+    {{> header}}
+    <p>Welcome to the Weather App</p>
+    {{!-- <h1>{{title}}</h1> --}}
+    {{!-- <p>Created By:: {{name}}</p> --}}
+
+    <form id="weather-form">
+      <input type="text" id="location" placeholder="Enter location" required />
+      <button type="submit">Get Weather</button>
+    </form>
+    <div id="weather-result">
+      <p id="weather-message"></p>
+      <p id="weather-details"></p>
+      <p id="weather-error"></p>
     </div>
+  </div>
+  {{> footer}}
+  <script src="/js/app.js"></script>
+</body>
 
-    {{> footer}}
-        <script src="/js/app.js"></script>
-
-  </body>
 </html>
